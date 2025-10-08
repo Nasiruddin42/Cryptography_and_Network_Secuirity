@@ -25,13 +25,14 @@ def derive_key(shared_secret):
 
 
 if __name__ == "__main__":
+    
     # Small illustrative example (insecure because p is tiny) -- good for learning
     q = 353   # prime modulus (tiny for demo)
     a = 3        # primitive root
     print("Demonstration with small parameters (INSECURE for real use):")
     print("q =", q, "a =", a)
 
-    # Alice and Bob choose private keys
+    # Alice and Bob choose private keys 
     a_priv = generate_private_key(bits=6) 
     b_priv = generate_private_key(bits=6)
 
