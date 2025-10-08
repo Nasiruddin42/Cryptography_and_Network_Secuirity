@@ -48,7 +48,7 @@ if __name__ == "__main__":
     print("Alice public A =", A_pub)
     print("Bob   public B =", B_pub)
     print("Alice shared secret:", A_shared)
-    print("Bob   shared secret:  ", B_shared)
+    print("Bob   shared secret:", B_shared)
     print("Shared equal?", A_shared == B_shared)
     print("Derived symmetric key (SHA-256):", derive_key(A_shared))
     print()
